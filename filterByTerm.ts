@@ -15,7 +15,7 @@ function filterByTerm(
   input: Array<Link>,
   searchTerm: string,
   lookupKey: string
-) {
+): Array<Link> {
   if (!searchTerm) throw Error("searchTerm cannot be empty");
   if (!input.length) throw Error("input cannot be empty");
   if (!lookupKey) throw Error("lookupkey cannot be empty");
@@ -34,7 +34,7 @@ const obj3: Link = { url: "String3" };
 
 const arrOfLinks: Array<Link> = [obj1, obj2, obj3];
 
-const term: string = "java";
+const term: string = "String1";
 
 console.log(filterByTerm(arrOfLinks, term, "url"));
 

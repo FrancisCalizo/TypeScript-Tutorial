@@ -16,7 +16,7 @@ var obj1 = { url: "String1" };
 var obj2 = { url: "String2" };
 var obj3 = { url: "String3" };
 var arrOfLinks = [obj1, obj2, obj3];
-var term = "java";
+var term = "String1";
 console.log(filterByTerm(arrOfLinks, term, "url"));
 var link1 = {
     description: "TypeScript tutorial for beginners is a tutorial for all the JavaScript developers ...",
